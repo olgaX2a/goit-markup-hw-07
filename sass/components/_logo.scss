@@ -1,0 +1,20 @@
+.logo {
+  font-family: $logo-font;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.logo__text {
+  &--accent {
+    color: $accent-color;
+  }
+  &--light-theme {
+    color: $title-color;
+  }
+  &--dark-theme {
+    color: rgba(255, 255, 255, 1);
+  }
+}

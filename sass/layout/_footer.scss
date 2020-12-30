@@ -1,0 +1,112 @@
+.footer {
+  background-color: rgba(47, 48, 58, 1);
+  font-family: $main-font;
+  text-align: left;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__address--wrapper {
+  margin-right: 70px;
+}
+
+.footer__address {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+}
+
+.footer__address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__map {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__contact {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__social--wrapper {
+  margin-right: 93px;
+}
+
+.footer__title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+}
+.footer__social-links {
+  display: flex;
+  justify-content: left;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__subscription--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.subscription__input {
+  margin-right: 12px;
+  background-color: transparent;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.subscription__form {
+  display: flex;
+  align-items: center;
+}
+.submit-btn {
+  display: flex;
+  align-items: center;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 28px 10px 29px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 1);
+}
+.submit-btn__icon {
+  width: 24px;
+  height: 24px;
+  fill: rgba(255, 255, 255, 1);
+  margin-left: 10px;
+}
