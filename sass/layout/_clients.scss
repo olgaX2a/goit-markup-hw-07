@@ -22,22 +22,12 @@
   height: 90px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
-  transition: border-color 250ms $timing-function;
+  fill: $icon-fill;
+  transition: border-color 250ms $timing-function, fill 250ms $timing-function;
 
   &:hover,
   &:focus {
     border-color: $accent-color;
-  }
-}
-
-.clients__logo {
-  fill: $icon-fill;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
-
-  .clients__link:hover &,
-  .clients__link:focus & {
     fill: $accent-color;
   }
 }

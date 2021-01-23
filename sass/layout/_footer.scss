@@ -31,6 +31,7 @@
 .footer__map {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
+  transition: color 250ms $timing-function;
   &:hover,
   &:focus {
     color: $accent-color;
@@ -40,6 +41,7 @@
 .footer__contact {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms $timing-function;
   &:hover,
   &:focus {
     color: $accent-color;
@@ -83,6 +85,7 @@
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: rgba(255, 255, 255, 1);
+  transition: border-color 250ms $timing-function;
   &:focus {
     outline: none;
     border-color: $accent-color;

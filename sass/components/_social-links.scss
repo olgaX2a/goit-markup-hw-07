@@ -5,39 +5,29 @@
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  transition: background-color 250ms $timing-function,
+    fill 250ms $timing-function;
 }
 .social__link--light-theme {
   @extend %social__link;
+  fill: $icon-fill;
   &:hover,
   &:focus {
     background-color: $accent-color;
+    fill: rgba(255, 255, 255, 1);
   }
 }
 .social__link--dark-theme {
   @extend %social__link;
   background: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 1);
   &:hover,
   &:focus {
     background-color: $accent-color;
+    fill: rgba(255, 255, 255, 1);
   }
 }
-%social__icon {
+.social__icon {
   width: 20px;
   height: 20px;
-}
-.social__icon--light-theme {
-  @extend %social__icon;
-  fill: $icon-fill;
-  .social__link--light-theme:hover &,
-  .social__link--light-theme:focus & {
-    fill: rgba(255, 255, 255, 1);
-  }
-}
-.social__icon--dark-theme {
-  @extend %social__icon;
-  fill: rgba(255, 255, 255, 1);
-  .social__link--dark-theme:hover &,
-  .social__link--dark-theme:focus & {
-    fill: rgba(255, 255, 255, 1);
-  }
 }

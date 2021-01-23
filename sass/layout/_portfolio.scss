@@ -14,7 +14,6 @@
 
 .portfolio__item {
   background-color: rgba(255, 255, 255, 1);
-  /*  border: 1px solid rgba(238, 238, 238, 1);*/
   margin-bottom: 30px;
 }
 
@@ -43,9 +42,10 @@
 }
 
 .portfolio__link {
+  display: block;
+  transition: box-shadow 250ms $timing-function;
   &:hover,
   &:focus {
-    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
